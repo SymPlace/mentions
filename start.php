@@ -129,6 +129,7 @@ function mentions_rewrite_river_message($hook, $type, $view_vars, $params) {
 function mentions_preg_callback($matches) {
 
 	$source = $matches[0];
+   if ( count($matches) < 2 ) return $source;
 	$preceding_char = $matches[1];
 	$mention = $matches[2];
 	$username = $matches[3];
