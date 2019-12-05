@@ -3,7 +3,7 @@
 	<name>Mentions</name>
 	<id>mentions</id>
 	<author>Core developers</author>
-	<version>1.9</version>
+	<version>1.9-1</version>
 	<description>Rewrite all @username mentions to link to profile and optionally notify user.</description>
 	<website>http://www.elgg.org/</website>
 	<repository>https://github.com/Elgg/mentions</repository>
