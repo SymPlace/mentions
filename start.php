@@ -165,10 +165,14 @@ function mentions_preg_callback($matches) {
 		));
 	}
 
+	$class = 'mentions-user-link';
+	if($user->getGUID() == elgg_get_logged_in_user_guid()) {
+	    $class .= ' mentions-logged-user';
+	}
 	$replacement = elgg_view('output/url', array(
 		'href' => $user->getURL(),
 		'text' => $icon . $label,
-		'class' => 'mentions-user-link',
+		'class' => $class,
 	));
 
 	return $preceding_char . $replacement . $period;
